@@ -1,0 +1,401 @@
+/* =====================
+   PENGATURAN DASAR
+===================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #F5F2F0;
+    color: #60494A;
+    line-height: 1.7;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+
+header {
+    background-color: white;
+    padding: 20px 7%;
+    border-bottom: 2px solid #E8DADA;
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #8B2635;
+    font-size: 24px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #60494A;
+    font-size: 14px;
+}
+
+.nav-menu a:hover {
+    color: #C75B62;
+}
+
+/* =====================
+   HOME
+===================== */
+
+.hero {
+    min-height: 550px;
+    padding: 70px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.subtitle {
+    color: #C75B62;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    color: #8B2635;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    color: #A74650;
+    margin-bottom: 15px;
+}
+
+.hero-content > p:not(.subtitle) {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #8B2635;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #C75B62;
+}
+
+.profile-picture {
+    width: 240px;
+    height: 290px;
+    background-color: #EBDADC;
+    border: 7px solid white;
+    border-radius: 120px 120px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* <-- Tambahkan baris ini */
+}
+
+/* <-- Tempel kode baru di bawah ini */
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.profile-picture span {
+    font-size: 65px;
+    color: #8B2635;
+}
+
+.profile-picture p {
+    color: #8B2635;
+}
+
+/* =====================
+   BAGIAN UMUM
+===================== */
+
+.section {
+    padding: 80px 10%;
+    border-top: 2px solid #E8DADA;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title p {
+    color: #C75B62;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    color: #8B2635;
+    font-size: 38px;
+}
+
+/* =====================
+   ABOUT ME
+===================== */
+
+#about {
+    background-color: #EDE3E2;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    color: #8B2635;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.biodata-card {
+    flex: 1;
+    max-width: 420px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.biodata-card h3 {
+    color: #8B2635;
+    margin-bottom: 15px;
+}
+
+.biodata-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #E8DADA;
+}
+
+.biodata-item span {
+    color: #C75B62;
+    font-size: 13px;
+}
+
+.biodata-item p {
+    font-weight: bold;
+}
+
+/* =====================
+   EDUCATION
+===================== */
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.education-card {
+    background-color: white;
+    padding: 25px;
+    border-left: 5px solid #8B2635;
+    border-radius: 10px;
+}
+
+.education-card h3 {
+    color: #C75B62;
+    font-size: 30px;
+}
+
+.education-card h4 {
+    color: #8B2635;
+    margin: 5px 0;
+}
+
+/* =====================
+   HOBBIES
+===================== */
+
+#hobbies {
+    background-color: #EDE3E2;
+}
+
+.hobby-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.hobby-card {
+    background-color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.hobby-icon {
+    font-size: 40px;
+    color: #C75B62;
+    margin-bottom: 10px;
+}
+
+.hobby-card h3 {
+    color: #8B2635;
+    margin-bottom: 8px;
+}
+
+/* =====================
+   MY STORY
+===================== */
+
+#story {
+    background-color: #F5F2F0;
+}
+
+.story-container {
+    max-width: 850px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.story-text h3 {
+    color: #8B2635;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.story-text p {
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+/* =====================
+   CONTACT
+===================== */
+
+#closing {
+    background-color: #EDE3E2;
+}
+
+.contact-box {
+    max-width: 650px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.contact-box h3 {
+    color: #8B2635;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.contact-name {
+    color: #C75B62;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+footer {
+    background-color: #8B2635;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+/* =====================
+   TAMPILAN HP
+===================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 7%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .education-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hobby-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 50px 7%;
+    }
+}
